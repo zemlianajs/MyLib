@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Components</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+          <header class="header">
+            <a class="header-logo" href="index.html">MYLIB</a>
+            <nav class="header-nav">
+              <a class="nav-item" href="Elements.html">elements</a>
+              <a class="nav-item" href="Components.html">components</a>
+              <a class="nav-item" href="Layouts.html">layouts</a>
+              <a class="nav-item" href="#">drafts</a>
+              <a class="nav-item" href="#">documentation</a>
+            </nav>   
+          </header>
+          <main class="main">
+            <aside class="sidebar">
+              <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="#">chevron menu</a></li>
+                <li class="sidebar-item"><a href="#">dropdown menu</a></li>
+                <li class="sidebar-item"><a href="#">modal box</a></li>
+                <li class="sidebar-item"><a href="#">allerts</a></li>
+              </ul>
+          </aside>
+            <div class="content">
+              <h2 class="tittle">Chevron menu</h2>
+              <hr class="hline">
+              <div class="container-info">                
+                <div class="box-info box color">
+                  <p><img class="info" src="img/info.png" alt="info"></p>
+                  <p><pre class="text-info">Possible to use on gradient background
+Easy to use opacity for items background
+Cross-browser</pre></p>
+                </div>
+              </div>
+              <nav class="nav gradient">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">faq</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="frame f-head-html"><h4 class="label">HTML</h4>
+                <div class="code-box html-box-head">
+                  <pre class="text">&ltul class="nav-list"&gt
+  &ltli class="nav-item"&gt&lta href="#">about&lt/a&gt&lt/li&gt
+  &ltli class="nav-item"&gt&lta href="#">careers&lt/a&gt&lt/li&gt
+  &ltli class="nav-item"&gt&lta href="#">faq&lt/a&gt&lt/li&gt
+  &ltli class="nav-item"&gt&lta href="#">contact&lt/a&gt&lt/li&gt
+&lt/ul&gt</pre>
+                </div>
+              </div>
+              <div class="frame f-chev-css"><h4 class="label">CSS</h4>
+                <div class="code-box css-box-chev">
+                  <pre class="text">.gradient {
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);  
+  height: 100px;
+  padding: 2px;
+  border: 2px solid linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 60px;
+  list-style: none;
+  cursor: pointer;
+}
+.nav-list .nav-item {
+  display: inline-block;
+  position: relative;
+  padding: 30px 25px 29px;
+  margin: 0 25px;
+  background: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;    
+}
+.nav-item a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+.nav-item a::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+  border-color: transparent transparent transparent #FFFFFF;
+}
+.nav-item a::before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: -25px;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+  border-color: #FFFFFF  #FFFFFF #FFFFFF transparent;  
+}
+.gradient .nav-list .nav-item:hover { 
+  background: rgba(255, 255, 255, 0.7); 
+  opacity: 1;
+}
+.gradient .nav-list .nav-item:hover a:after {    
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+}
+.gradient .nav-item:hover a:before {
+  border-color: rgba(255, 255, 255, 0.7)  rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) transparent;     
+}</pre>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+    </body>
+</html>

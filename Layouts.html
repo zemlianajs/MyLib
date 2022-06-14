@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layouts</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+          <header class="header">
+            <a class="header-logo" href="index.html">MYLIB</a>
+            <nav class="header-nav">
+              <a class="nav-item" href="Elements.html">elements</a>
+              <a class="nav-item" href="Components.html">components</a>
+              <a class="nav-item" href="Layouts.html">layouts</a>
+              <a class="nav-item" href="#">drafts</a>
+              <a class="nav-item" href="#">documentation</a>
+            </nav> 
+          </header>
+          <main class="main">
+            <aside class="sidebar">
+              <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="#">Option 1</a></li>
+                <li class="sidebar-item"><a href="#">Option 2</a></li>
+                <li class="sidebar-item"><a href="#">Option 3</a></li>
+              </ul>
+            </aside>
+            <div class="content">
+              <h2 class="tittle">Option 1</h2>
+              <hr class="hline">
+              <div class="container-info">                
+                <div class="box-info box color">
+                  <p><img class="info" src="img/info.png" alt="info"></p>
+                  <p><pre class="text-info">The flex property is a shorthand property for:
+  flex-grow, flex-shrink, flex-basis
+The flex property sets the flexible length on flexible items.</pre>
+                </div></p>
+              </div>
+              <h3 class="sub-tittle">Layout Elements</h3>
+              <hr class="line">
+              <ul class="layouts-elements">
+                <li class="tag-elements">&ltheader&gt - defines a header for a document or a section</li>
+                <li class="tag-elements">&ltmain&gt - tag pecifies the main content of a document</li>
+                <li class="tag-elements">&ltaside&gt - defines content aside from the content</li>
+                <li class="tag-elements">&ltfooter&gt - defines a footer for a document or a section</li>
+              </ul>
+              <div class="frame f-layuot-html"><h4 class="label">HTML</h4>
+                <div class="code-box html-box-layout">
+                  <pre class="text">&ltdiv class="wrapper"&gt
+  &ltheader class="header"&gtheader&lt/header&gt
+  &ltmain class="main"&gt
+    &ltaside class="sidebar"&gtsidebar&lt/aside&gt
+    &ltdiv class="content"&gtcontent&lt/div&gt
+  &lt/main&gt
+  &ltfooter class="footer"&gtfooter&lt/footer&gt
+&lt/div&gt</pre>
+                </div>
+              </div>
+              <div class="frame f-layout-css"><h4 class="label">CSS</h4>
+                <div class="code-box css-box-layout">
+                  <pre class="text">body {
+  margin: 0;
+}
+.header {
+  flex: 0 0 80px;
+}
+.main {
+  flex-grow: 1;
+  display: flex;
+}
+.sidebar {
+  flex: 0 0 240px;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1;
+}
+.footer {
+  flex: 0 0 80px;
+}</pre>
+                </div>
+              </div>
+
+            </div>
+          </main>
+        </div>
+    </body>
+</html>
